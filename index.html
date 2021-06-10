@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Image Gallery</h1>
+    <div class="controls">
+      <button class="filter active" data-filter="*">All</button>
+      <button class="filter" data-filter=".mikumi">MIKUMI</button>
+      <button class="filter" data-filter=".manyara">MANYARA</button>
+      <button class="filter" data-filter=".serengeti">SERENGETI</button>
+      <button class="filter" data-filter=".ngorongoro">NGORONGORO</button>
+    </div>
+    <div class="container">
+      <div class="mix serengeti">
+        <img
+          src="https://www.jenmansafaris.com/wp-content/uploads/2014/12/Day-4_Serengeti-National-Park.jpg"
+        />
+      </div>
+      <div class="mix mikumi">
+        <img
+          src="https://media.istockphoto.com/photos/elephant-and-lion-picture-id1136053333?k=6&m=1136053333&s=612x612&w=0&h=YkquB0hgvAnp0jL4jssf8dYuo2HPpD9VtZ2ubHIEpeM="
+        />
+      </div>
+      <div class="mix manyara">
+        <img
+          src="https://kids.kiddle.co/images/thumb/a/ac/Cheetah_portrait_Whipsnade_Zoo.jpg/499px-Cheetah_portrait_Whipsnade_Zoo.jpg"
+        />
+      </div>
+      <div class="mix ngorongoro">
+        <img src="https://www.goodnet.org/photos/620x0/31745_hd.jpg" />
+      </div>
+      <div class="mix serengeti">
+        <img
+          src="https://images.unsplash.com/photo-1539162362027-a4ae05b65e6e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+        />
+      </div>
+      <div class="mix manyara">
+        <img
+          src="http://listaka.com/wp-content/uploads/2015/08/Hippopotamus.jpg"
+        />
+      </div>
+      <div class="mix mikumi">
+        <img src="http://thetyee.ca/Culture/2017/10/31/FawnLawn.jpg" />
+      </div>
+      <div class="mix ngorongoro">
+        <img
+          src="https://www.thoughtco.com/thmb/P-sVUTslCs5DeUpmKwDfRO5ub9c=/1920x1080/smart/filters:no_upscale()/lion-805084_1920-c62a5582169c4bae82553d9a21c1a0bb.jpg"
+        />
+      </div>
+      <div class="mix serengeti">
+        <img
+          src="https://static.independent.co.uk/2020/09/20/20/newFile.jpg?width=1200&auto=webp&quality=75"
+        />
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var container = mixitup(".container");
+      });
+    </script>
+  </body>
+</html>
